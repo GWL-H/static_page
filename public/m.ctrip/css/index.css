@@ -1,0 +1,627 @@
+body {
+    max-width: 540px;
+    min-width: 320px;
+    margin: 0 auto;
+    color: #000;
+    background: #fafafc;
+    font: 400 16px/1.5 PingFangSC-regular, Tahoma, "Lucida Grande", Verdana, "Microsoft Yahei", STXihei, hei;
+    overflow-x: hidden;
+    -webkit-tap-highlight-color: transparent;
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?7kkyc2');
+    src: url('../fonts/icomoon.eot?7kkyc2#iefix')format('embedded-opentype'), url('../fonts/icomoon.ttf?7kkyc2')format('truetype'), url('../fonts/icomoon.woff?7kkyc2')format('woff'), url('../fonts/icomoon.svg?7kkyc2#icomoon')format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #222;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+
+/* 搜索模块 */
+
+.search-index {
+    display: flex;
+    /* 固定定位于父级没有关系，他与屏幕为准 */
+    position: fixed;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    /* 固定的盒子应该有宽度 */
+    width: 100%;
+    max-width: 540px;
+    min-width: 320px;
+    height: 44px;
+    background-color: transparent;
+    background-color: #f6f6f6;
+    z-index: 9999;
+}
+
+.search {
+    position: relative;
+    height: 30px;
+    line-height: 28px;
+    border: 1px solid #ececed;
+    border-radius: 15px;
+    flex: 1;
+    background-color: #ececed;
+    margin: 6px 0 0 12px;
+    padding-left: 35px;
+    font-size: 15px;
+    color: #666;
+}
+
+.search::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 35px;
+    height: 28px;
+    background: url(../images/sprite.png) no-repeat 15px 7px;
+    background-size: 21px auto;
+}
+
+.user {
+    width: 51px;
+    height: 44px;
+    font-size: 12px;
+    text-align: center;
+    color: #222;
+    margin-right: 4px;
+}
+
+.user::before {
+    content: "";
+    display: block;
+    width: 22px;
+    height: 22px;
+    background: url(../images/sprite.png) no-repeat 1px -78px;
+    background-size: 21px auto;
+    margin: 4px auto 0;
+}
+
+
+/* goBack */
+
+.goBack {
+    display: none;
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+    width: 38px;
+    height: 38px;
+    background: url(../images/back.png) no-repeat;
+    background-size: 38px 38px;
+    z-index: 99;
+}
+
+
+/* 焦点图 */
+
+.focus {
+    position: relative;
+    padding-top: 44px;
+    overflow: hidden;
+}
+
+.focus img {
+    width: 100%;
+}
+
+.focus ul {
+    overflow: hidden;
+    width: 500%;
+    margin-left: -100%;
+}
+
+.focus ul li {
+    float: left;
+    width: 20%;
+}
+
+.focus ol {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    margin: 0;
+}
+
+.focus ol li {
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    background-color: #fff;
+    list-style: none;
+    border-radius: 2px;
+    transition: all .3s;
+}
+
+.focus ol li.current {
+    width: 15px;
+}
+
+
+/* search搜索栏头部阴影部分 */
+
+
+/* .focus::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    max-width: 540px;
+    min-width: 320px;
+    height: 60px;
+    display: block;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, .4)), to(rgba(0, 0, 0, 0)));
+    background: linear-gradient(to bottom, rgba(0, 0, 0, .4), rgba(0, 0, 0, 0));
+} */
+
+
+/* 局部导航栏 */
+
+.local-nav {
+    display: flex;
+    height: 64px;
+    margin: 3px 4px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.local-nav li {
+    flex: 1;
+}
+
+.local-nav a {
+    display: flex;
+    flex-direction: column;
+    /* 侧轴居中对齐 因为是单行 */
+    align-items: center;
+    font-size: 12px;
+}
+
+.local-nav li [class^="local-nav-icon"] {
+    width: 32px;
+    height: 32px;
+    background-color: pink;
+    margin-top: 8px;
+    background: url(../images/localnav_bg.png) no-repeat 0 0;
+    background-size: 32px auto;
+}
+
+.local-nav li .local-nav-icon-icon2 {
+    background-position: 0 -32px;
+}
+
+.local-nav li .local-nav-icon-icon3 {
+    background-position: 0 -64px;
+}
+
+.local-nav li .local-nav-icon-icon4 {
+    background-position: 0 -96px;
+}
+
+.local-nav li .local-nav-icon-icon5 {
+    background-position: 0 -128px;
+}
+
+
+/* nav */
+
+nav {
+    overflow: hidden;
+    border-radius: 8px;
+    margin: 5px 12px;
+}
+
+nav a {
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    line-height: 65px;
+}
+
+.nav-common {
+    display: flex;
+    height: 65px;
+    background-color: pink;
+}
+
+.nav-common {
+    background: -webkit-linear-gradient(to right, #fa5956, #fb8650 54%);
+    background: linear-gradient(to right, #fa5956, #fb8650 54%);
+}
+
+.nav-common a:nth-child(1) {
+    width: 31%;
+    border-right: 1px solid #fff;
+    text-align: left;
+    padding-left: 12px;
+    background: url(../images/nav1-1.png) no-repeat;
+    background-size: 73px auto;
+    background-position: right bottom;
+}
+
+.nav-common a:nth-child(2) {
+    flex: 1;
+    border-right: 1px solid #fff;
+    background: url(../images/nav1-2.png) no-repeat;
+    background-size: 37px auto;
+    background-position: left bottom;
+}
+
+.nav-common a:nth-child(3) {
+    flex: 2;
+    background: linear-gradient(to right, #ffbc49, #ffd252);
+    position: relative;
+}
+
+.nav-common .nav-span-title {
+    display: block;
+    background: url(../images/nav1-3.png) no-repeat;
+    background-size: 86px auto;
+    background-position: right bottom;
+    color: #a05416;
+}
+
+.nav-common .nav-span-tag {
+    color: #fff;
+    font-size: 12px;
+    background-color: #f54c45;
+    border-radius: 7px 7px 7px 0;
+    position: absolute;
+    top: 8px;
+    right: 60px;
+    padding: 2px 5px;
+    line-height: 1;
+}
+
+
+/*  */
+
+.nav-flight {
+    display: flex;
+    height: 65px;
+    background-color: pink;
+    margin: 1px 0;
+    background: -webkit-gradient(linear, left top, right top, from(#4b8fed), to(#53bced));
+    background: linear-gradient(to right, #4b8fed, #53bced);
+}
+
+.nav-flight a:nth-child(1) {
+    width: 31%;
+    border-right: 1px solid #fff;
+    text-align: left;
+    padding-left: 12px;
+    background: url(../images/nav2-1.png) no-repeat;
+    background-size: 79px auto;
+    background-position: right bottom;
+}
+
+.nav-flight a:nth-child(2) {
+    flex: 1;
+    border-right: 1px solid #fff;
+    background: url(../images/nav2-2.png) no-repeat;
+    background-size: 37px auto;
+    background-position: left bottom;
+}
+
+.nav-flight a:nth-child(3) {
+    flex: 1;
+    border-right: 1px solid #fff;
+}
+
+.nav-flight a:nth-child(4) {
+    flex: 1;
+}
+
+
+/*  */
+
+.nav-travel {
+    background: -webkit-gradient(linear, left top, right top, from(#34c2aa), to(#6cd557));
+    background: linear-gradient(to right, #34c2aa, #6cd557);
+}
+
+.nav-travel a:nth-child(1) {
+    background: url(../images/nav3-1.png) no-repeat;
+    background-size: 94px auto;
+    background-position: right bottom;
+}
+
+.nav-travel a:nth-child(2) {
+    background: url(../images/nav3-2.png) no-repeat;
+    background-size: 61px auto;
+    background-position: left bottom;
+}
+
+
+/* 测导航栏 */
+
+.subnav-entry {
+    display: flex;
+    margin: 0 12px;
+    flex-wrap: wrap;
+    font-size: 12px;
+}
+
+.subnav-entry li {
+    /* 子盒子可以用百分数，相对于父级来说 */
+    flex: 20%;
+}
+
+.subnav-entry a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subnav-entry-icon {
+    width: 28px;
+    height: 28px;
+    margin-top: 10px;
+    background: url(../images/subnav-bg.png) no-repeat;
+    background-size: 28px auto;
+}
+
+.subnav-entry li:nth-child(2) .subnav-entry-icon {
+    background-position: 0 -28px;
+}
+
+.subnav-entry li:nth-child(3) .subnav-entry-icon {
+    background-position: 0 -56px;
+}
+
+.subnav-entry li:nth-child(4) .subnav-entry-icon {
+    background-position: 0 -84px;
+}
+
+.subnav-entry li:nth-child(5) .subnav-entry-icon {
+    background-position: 0 -112px;
+}
+
+.subnav-entry li:nth-child(6) .subnav-entry-icon {
+    background-position: 0 -140px;
+}
+
+.subnav-entry li:nth-child(7) .subnav-entry-icon {
+    background-position: 0 -168px;
+}
+
+.subnav-entry li:nth-child(8) .subnav-entry-icon {
+    background-position: 0 -196px;
+}
+
+.subnav-entry li:nth-child(9) .subnav-entry-icon {
+    background-position: 0 -224px;
+    position: relative;
+}
+
+.subnav-entry-tag {
+    position: absolute;
+    font-size: 5px;
+    color: #fff;
+    background: -webkit-gradient(linear, left top, right top, from(#f94242), to(#ffa25f));
+    background: linear-gradient(to right, #f94242, #ffa25f);
+    border-radius: 7px;
+    padding: 0 5px;
+    /* 定义文本字母只有大写字母 */
+    text-transform: uppercase;
+    top: -3px;
+    right: -15px;
+}
+
+.subnav-entry li:nth-child(10) .subnav-entry-icon {
+    background-position: 0 -252px;
+}
+
+
+/* 销售模块 */
+
+.sales-box {
+    margin-top: 4px;
+    border-top: 1px solid #ddd;
+}
+
+.sales-hd {
+    position: relative;
+    padding: 0 8px;
+    background-color: #fff;
+    height: 44px;
+}
+
+.sales-hd h2 {
+    position: relative;
+    padding-top: 44px;
+    margin: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+.sales-hd h2::after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 2px;
+    width: 79px;
+    height: 15px;
+    background: url(../images/hot.png) no-repeat 0 -19px;
+    background-size: 79px auto;
+}
+
+.icon-gg {
+    position: absolute;
+    display: inline-block;
+    top: 16px;
+    left: 85px;
+    width: 36px;
+    height: 15px;
+    background: url(../images/icon-gg.png) no-repeat;
+    background-size: 36px auto;
+}
+
+.sales-hd a {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    padding: 1px 15px;
+    border-radius: 15px;
+    font-size: 12px;
+    color: #fff;
+    background: -webkit-gradient(linear, left top, right top, from(#ff4e63), to(#ff6cc9));
+    background: linear-gradient(to right, #ff4e63, #ff6cc9);
+}
+
+.sales-hd a::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    right: 6px;
+    width: 7px;
+    height: 7px;
+    border: 2px solid #fff;
+    border-width: 2px 2px 0 0;
+    transform: rotate(45deg);
+}
+
+.sales-bd {
+    border-top: 1px solid #ccc;
+}
+
+.row {
+    display: flex;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.row a {
+    position: relative;
+    flex: 50%;
+}
+
+.row a:nth-child(1) {
+    border-right: 1px solid #f2f2f2;
+}
+
+.row a img {
+    width: 100%;
+}
+
+.row a .gg {
+    width: 26px;
+    height: 14px;
+    border-radius: 0px 4px 0px 0px;
+    background-color: rgba(0, 0, 0, .2);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.gg span {
+    color: #fff;
+    font-size: 18px;
+    width: 52px;
+    height: 28px;
+    line-height: 28px;
+    display: block;
+    text-align: center;
+    /* 缩小50% */
+    transform: scale(0.5);
+    /* 确定变形原点位置 */
+    /* transform-origin: 0px 0px; */
+    transform-origin: top left;
+}
+
+
+/* footer底部 */
+
+.tool-cn {
+    display: flex;
+    height: 60px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    background-color: #fff;
+}
+
+.tool-cn a {
+    flex: 1;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tool-cn a i {
+    flex: 1;
+    font-family: 'icomoon';
+    display: block;
+    width: 18px;
+    height: 18px;
+    font-size: 18px;
+    font-style: normal;
+}
+
+.tool-cn a span {
+    flex: 1;
+    display: block;
+    font-size: 12px;
+    color: #333;
+    margin-top: 4px;
+}
+
+.tool-ver {
+    margin-top: 5px;
+    text-align: center;
+    color: #999;
+}
+
+.tool-ver a {
+    color: #666;
+    font-size: 12px;
+}
+
+.icon-global {
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    background: url(../images/Language.png) no-repeat 0 -160px;
+    background-size: 30px auto;
+    margin-right: 5px;
+}
+
+.triangle {
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    border: 1px solid #666;
+    border-width: 1px 1px 0 0;
+    transform: rotate(140deg);
+}
+
+.tool-box p {
+    margin: 0;
+    padding: 5px 0;
+    color: #999;
+    font-size: 12px;
+    text-align: center;
+}
+
+.tool-box p a {
+    color: #999;
+}

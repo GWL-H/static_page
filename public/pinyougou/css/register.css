@@ -1,0 +1,147 @@
+.w {
+    width: 1200px;
+    margin: auto;
+}
+
+.header {
+    height: 83px;
+    border-bottom: 2px solid #b1191a;
+}
+
+.logo img {
+    padding-top: 15px;
+}
+
+.registerarea {
+    height: 520px;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+}
+
+.registerarea h3 {
+    height: 40px;
+    border-bottom: 1px solid #ccc;
+    background-color: #ececec;
+    line-height: 40px;
+    padding: 0 10px;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+.registerarea h3 em {
+    float: right;
+    font-size: 14px;
+}
+
+.registerarea h3 em a {
+    color: #C81623;
+}
+
+.reg_form {
+    width: 550px;
+    height: 400px;
+    margin: 30px auto 0;
+}
+
+.reg_form li {
+    margin-bottom: 15px;
+}
+
+.reg_form label {
+    display: inline-block;
+    width: 100px;
+    height: 36px;
+    line-height: 36px;
+    text-align: right;
+}
+
+.inp {
+    width: 238px;
+    height: 34px;
+    border: 1px solid #ccc;
+    margin: 0 10px;
+}
+
+.error {
+    color: #df3033;
+}
+
+.success_ico,
+.error_ico {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url(../img/error.png) no-repeat;
+    /*让图片以文字水平居中*/
+    vertical-align: middle;
+}
+
+.success {
+    color: #40b83f;
+}
+
+.success_ico {
+    background: url(../img/success.png) no-repeat;
+}
+
+.safe {
+    margin-top: -10px;
+    padding-left: 187px;
+    color: #b2b2b2;
+}
+
+.safe em {
+    padding: 0 12px;
+    color: #fff;
+}
+
+.ruo {
+    background-color: #de1111;
+}
+
+.zhong {
+    background-color: #40B83F;
+}
+
+.qiang {
+    background-color: #f97100;
+}
+
+.agree {
+    padding-top: 5px;
+    padding-left: 120px;
+}
+
+.agree input {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.agree a {
+    color: #1ba1e6;
+}
+
+.over {
+    width: 200px;
+    height: 34px;
+    background-color: #C81623;
+    margin: 15px 0 0 130px;
+    border: none;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.footer {
+    height: 120px;
+    text-align: center;
+}
+
+.copyright_links {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.copyright_info {
+    line-height: 20px;
+}

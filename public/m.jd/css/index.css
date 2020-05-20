@@ -1,0 +1,462 @@
+body {
+    width: 100%;
+    min-width: 320px;
+    max-width: 1080px;
+    margin: 0 auto;
+    font-size: 14px;
+    font-family: -apple-system, Helvetica, sans-serif;
+    color: #666;
+    line-height: 1.5px;
+    background-color: #f6f6f6;
+}
+
+
+/*点击高亮我们需要清除清除  设置为transparent 完成透明*/
+
+* {
+    -webkit-tap-highlight-color: transparent;
+}
+
+
+/*在移动端浏览器默认的外观在iOS上加上这个属性才能给按钮和输入框自定义样式*/
+
+input {
+    -webkit-appearance: none;
+}
+
+
+/*禁用长按页面时的弹出菜单*/
+
+img,
+a {
+    -webkit-touch-callout: none;
+}
+
+a {
+    color: #666;
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+img {
+    /* 去除图片的空白孔隙 */
+    vertical-align: middle;
+}
+
+
+/* 顶部 */
+
+.app {
+    height: 45px;
+}
+
+.app ul li {
+    float: left;
+    height: 45px;
+    background-color: #333;
+    line-height: 45px;
+    text-align: center;
+    color: #fff;
+}
+
+.app ul li:nth-child(1) {
+    width: 8%;
+}
+
+.app ul li:nth-child(1) img {
+    width: 10px;
+}
+
+.app ul li:nth-child(2) {
+    width: 10%;
+}
+
+.app ul li:nth-child(2) img {
+    width: 30px;
+    vertical-align: middle;
+}
+
+.app ul li:nth-child(3) {
+    width: 57%;
+}
+
+.app ul li:nth-child(4) {
+    width: 25%;
+    background-color: #f63515;
+}
+
+
+/* 搜索栏 */
+
+.headbg {
+    width: 100%;
+    /* background-image: -webkit-linear-gradient(bottom, #f1503b, #c82519 50%); */
+}
+
+.search-wrap {
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    top: 44px;
+    left: 0;
+    height: 45px;
+    z-index: 999;
+    min-width: 320px;
+    background-color: #e43130;
+}
+
+.search-btn {
+    position: absolute;
+    width: 40px;
+    height: 44px;
+    top: 0;
+    left: 0;
+}
+
+.search-btn::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 18px;
+    background: url(../images/s-btn.png) no-repeat;
+    background-size: 20px 18px;
+    margin: 14px 0 0 15px;
+}
+
+.search {
+    position: relative;
+    height: 30px;
+    margin: 0 50px;
+    background-color: #fff;
+    border-radius: 15px;
+    margin-top: 7px;
+}
+
+.search-login {
+    position: absolute;
+    width: 40px;
+    height: 44px;
+    top: 0;
+    right: 0;
+    color: #fff;
+    line-height: 44px;
+}
+
+.jd-icon {
+    position: absolute;
+    width: 20px;
+    height: 15px;
+    top: 8px;
+    left: 13px;
+    background: url(../images/jd-icon.png) no-repeat;
+    background-size: 20px 15px;
+}
+
+.jd-icon::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 1px;
+    height: 15px;
+    background-color: #ccc;
+    right: -8px;
+}
+
+.sou {
+    position: absolute;
+    width: 18px;
+    height: 15px;
+    top: 8px;
+    left: 50px;
+    background-color: pink;
+    background: url(../images/jd-sprites.png) no-repeat -81px 0;
+    background-size: 200px auto;
+}
+
+.search input {
+    position: absolute;
+    top: 0;
+    left: 78px;
+    border: 0;
+    background: 0;
+    width: 70%;
+    line-height: 30px;
+    /* 输入框获取焦点时去掉蓝色边框 */
+    outline: none;
+}
+
+
+/* 滑动图 */
+
+.slider {
+    width: 95%;
+    margin: 50px auto 0;
+}
+
+.slider img {
+    width: 100%;
+}
+
+
+/* comenav底部快捷栏 */
+
+.comenav {
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    min-width: 320px;
+    z-index: 1;
+    background-color: #fff;
+}
+
+.comenav div {
+    float: left;
+    width: 20%;
+    text-align: center;
+}
+
+.comenav div img {
+    width: 60px;
+    height: 50px;
+}
+
+
+/* 主体 */
+
+
+/* nav */
+
+.nav {
+    width: 100%;
+    height: 150px;
+}
+
+.nav a {
+    float: left;
+    width: 20%;
+    text-align: center;
+}
+
+.nav a img {
+    width: 40px;
+    margin-top: 13px;
+}
+
+.nav a span {
+    display: block;
+    margin-top: 14px;
+    font-size: 10px;
+}
+
+
+/* 品牌日 */
+
+.brand {
+    overflow: hidden;
+    width: 100%;
+}
+
+.brand div {
+    float: left;
+    width: 33.33%;
+}
+
+.brand img {
+    width: 100%;
+}
+
+
+/* 京东秒杀 */
+
+.floor-container {
+    overflow: hidden;
+    position: relative;
+    width: 95%;
+    height: 155px;
+    margin: 10px auto;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.title_wrap {
+    height: 34px;
+    line-height: 34px;
+    background: url(../images/jd-miao.png) no-repeat;
+    background-size: contain;
+}
+
+.title_wrap a {
+    font-size: 12px;
+}
+
+.JD-miao {
+    float: left;
+    width: 69px;
+    height: 27px;
+    background: url(../images/miao.png) no-repeat;
+    background-size: 69px auto;
+    margin: 6px 6px 0 6px;
+}
+
+.title_wrap a strong {
+    float: left;
+    color: #232326;
+    font-weight: bold;
+}
+
+.title_wrap a span {
+    float: left;
+    margin: 0 10px;
+    color: #232326;
+}
+
+.miaosha {
+    float: right;
+    margin-right: 20px;
+    color: #f23030;
+}
+
+.miaosha i {
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    background: url(../images/arrow_rt.png) no-repeat;
+    background-size: 11px 11px;
+    position: absolute;
+    top: 11px;
+    right: 5px;
+}
+
+.header_wrap {
+    width: 810px;
+}
+
+.header_wrap li {
+    float: left;
+    width: 77px;
+    margin: 0 2px;
+}
+
+.header_wrap_img img {
+    width: 100%;
+}
+
+.header_wrap_price {
+    text-align: center;
+    margin-top: 2px;
+}
+
+.header_wrap_price span:nth-child(1) {
+    color: #e93b3d;
+    display: block;
+    font-size: 16px;
+    line-height: 16px;
+    height: 16px;
+}
+
+.header_wrap_price span:nth-child(2) {
+    color: #999;
+    display: inline-block;
+    margin-top: 5px;
+    font-size: 12px;
+    line-height: 12px;
+    text-decoration: line-through;
+}
+
+
+/* 新人区 */
+
+.xinren {
+    overflow: hidden;
+    width: 95%;
+    margin: 5px auto;
+}
+
+.xinren div {
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+.xinren div:nth-child(1) img {
+    width: 100%;
+    border-radius: 5px 0 0 5px;
+}
+
+.xinren div:nth-child(2) img {
+    width: 100%;
+    border-radius: 0 5px 5px 0;
+}
+
+
+/* 滑动模块 */
+
+.huadong {
+    overflow: hidden;
+    width: 95%;
+    margin: 5px auto;
+    text-align: center;
+}
+
+.huadong div {
+    float: left;
+    width: 32%;
+}
+
+.huadong div img {
+    width: 90%;
+    vertical-align: bottom;
+}
+
+.huadong .zhong {
+    width: 36%;
+}
+
+.kongbai {
+    float: left;
+    width: 100%;
+    height: 60px;
+    background-color: #fff;
+}
+
+
+/* 商品福利块 */
+
+
+/* .fuli {
+    overflow: hidden;
+    width: 95%;
+    margin: 5px auto;
+}
+
+.fuli_one {
+    float: left;
+    width: 25%;
+    height: 87px;
+    text-align: center;
+    margin: 0 1px;
+}
+
+.fuli_dpg {
+    width: 100%;
+    height: 87px;
+    background: url(../upload/kuang.dpg) no-repeat;
+    background-size: auto 120px;
+}
+
+.xiaotu {
+    width: 70%;
+}
+
+.xiaotu img {
+    display: inline-block;
+    width: 100%;
+} */

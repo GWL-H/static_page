@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人主页</title>
+    <!--图标-->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="bootstrap/js/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
+</head>
+
+<body class="bg01">
+    <!-- mobile_header 移动端快捷导航栏 -->
+    <div class="mobile_header hidden-md hidden-lg">
+        <a href="index.html" class="logo">
+            <img data-lazy-src="images/logo.jpg" />
+        </a>
+        <span class="menu_icon"></span>
+        <ul class="menu">
+            <li class="on"><a href="index.html">首页</a></li>
+            <li><a href="javascript:;">关于我们</a></li>
+            <li><a href="javascript:;">产品中心</a></li>
+            <li><a href="javascript:;">新闻中心</a></li>
+            <li><a href="javascript:;">联系我们</a></li>
+            <li><a href="javascript:;">在线留言</a></li>
+        </ul>
+    </div>
+    <!-- header 快捷导航栏 -->
+    <div class="header hidden-xs hidden-sm clearfix">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img data-lazy-src="images/logo.jpg" />
+            </a>
+            <div class="nav">
+                <ul>
+                    <li class="on"><a href="index.html">首页</a></li>
+                    <li><a href="javascript:;">关于我们</a></li>
+                    <li><a href="javascript:;">产品中心</a></li>
+                    <li><a href="javascript:;">新闻中心</a></li>
+                    <li><a href="javascript:;">联系我们</a></li>
+                    <li><a href="javascript:;">在线留言</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- slideBox 幻灯片（轮播图） -->
+    <div id="slideBox" class="slideBox">
+        <div class="bd">
+            <ul>
+                <li>
+                    <a class="pic" href="public/resume/index.html" target="_blank"><img data-lazy-src="upload/banner1.jpg" /></a>
+                </li>
+                <li>
+                    <a class="pic" href="public/resume/index.html" target="_blank"><img data-lazy-src="upload/banner2.jpg" /></a>
+                </li>
+                <li>
+                    <a class="pic" href="public/resume/index.html" target="_blank"><img data-lazy-src="upload/banner3.jpg" /></a>
+                </li>
+                <li>
+                    <a class="pic" href="public/resume/index.html" target="_blank"><img data-lazy-src="upload/banner4.jpg" /></a>
+                </li>
+                <li>
+                    <a class="pic" href="public/resume/index.html" target="_blank"><img data-lazy-src="upload/banner5.jpg" /></a>
+                </li>
+            </ul>
+        </div>
+        <span class="prev hidden-xs hidden-sm"></span>
+        <span class="next hidden-xs hidden-sm"></span>
+        <ul class="hd">
+            <li class="on"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <!-- index_section 主体案例 -->
+    <div class="index_section sec01">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <div class="column_figure">
+                        <a href="public/pinyougou/index.html" target="_blank">
+                            <img data-lazy-src="upload/pic01.png" />
+                        </a>
+                    </div>
+                    <div class="column_content">
+                        <div class="column_title text-center">
+                            品优购网站
+                        </div>
+                        <div class="column_con">
+                            以jQuery框架为基础，大概按照京东网站模板，进行HTML和css编写，运用了简单的js技术。品优购案例是由多网页组成，包含：主页、列表页、详情页、购物车、登录页。品优购主页>商品手机列表页>商品手机详情页>购物车页面>注册登录页面。
+                        </div>
+                        <div class="column_btn text-center">
+                            <a href="public/pinyougou/index.html" target="_blank">MORE</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <div class="column_figure">
+                        <a href="public/resume/index.html" target="_blank">
+                            <img data-lazy-src="upload/pic02.png" />
+                        </a>
+                    </div>
+                    <div class="column_content">
+                        <div class="column_title text-center">
+                            个人简历H5
+                        </div>
+                        <div class="column_con">
+                            以全屏滚动为主要核心制作的个人简历网页，结合W3C标准：结构，表现，行为，编写代码而成。主要引用HTML5、CSS3、JavaScript进行代码编写。
+                        </div>
+                        <div class="column_btn text-center">
+                            <a href="public/resume/index.html" target="_blank">MORE</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <div class="column_figure">
+                        <a href="public/alibaixiu/index.html" target="_blank">
+                            <img data-lazy-src="upload/pic03.png" />
+                        </a>
+                    </div>
+                    <div class="column_content">
+                        <div class="column_title text-center">
+                            阿里百秀
+                        </div>
+                        <div class="column_con">
+                            以boostrap框架为主的响应式页面，结合HTML、CSS实现结构表现，通过简单的JS代码进行行为操作。
+                        </div>
+                        <div class="column_btn text-center">
+                            <a href="public/alibaixiu/index.html" target="_blank">MORE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- index_section 开发软件模块 -->
+    <div class="index_section sec02">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-center">
+                    <a href="https://code.visualstudio.com/" target="_blank">
+                        <img class="adv_img img-circle" src="upload/app1.png" />
+                        <p class="adv_tit">Visual Studio Code</p>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-center">
+                    <a href="http://www.sublimetext.cn/3" target="_blank">
+                        <img class="adv_img img-circle" src="upload/app2.jpg" />
+                        <p class="adv_tit">Sublime Text3</p>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-center">
+                    <a href="https://www.dcloud.io/" target="_blank">
+                        <img class="adv_img img-circle" src="upload/app3.jpg" />
+                        <p class="adv_tit">HBuilder</p>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-center">
+                    <a href="https://www.adobe.com/cn/creativecloud/catalog/desktop.html?promoid=RL89NGY7&mv=other" target="_blank">
+                        <img class="adv_img img-circle" src="upload/app4.jpg" />
+                        <p class="adv_tit">Dreamweaver</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- index_section 主体 -->
+    <div class="index_section sec03">
+        <div class="container">
+            <!-- 产品中心 -->
+            <div class="row index_section_hd text-center">
+                移动端网页
+            </div>
+            <div class="row">
+                <ul class="product_list">
+                    <li class="pro_item col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                        <a class="pro_pic" href="public/m.jd/index.html">
+                            <img data-lazy-src="upload/pro-1.png" />
+                        </a>
+                        <a href="#" class="pro_tit">仿-京东网页(%)</a>
+                    </li>
+                    <li class="pro_item col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                        <a class="pro_pic" href="public/m.ctrip/index.html">
+                            <img data-lazy-src="upload/pro-2.png" />
+                        </a>
+                        <a href="#" class="pro_tit">仿-携程网页(flex)</a>
+                    </li>
+                    <li class="pro_item col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                        <a class="pro_pic" href="public/m.suning(rem+js)/index.html">
+                            <img data-lazy-src="upload/pro-3.png" />
+                        </a>
+                        <a href="#" class="pro_tit">仿-苏宁网页(rem+js)</a>
+                    </li>
+                    <li class="pro_item col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                        <a class="pro_pic" href="public/m.suning(rem+less)/main.html">
+                            <img data-lazy-src="upload/pro-4.png" />
+                        </a>
+                        <a href="#" class="pro_tit">仿-苏宁网页(rem+less)</a>
+                    </li>
+                    <li class="pro_item col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                        <a class="pro_pic" href="javascript:;">
+                            <img data-lazy-src="upload/pro-5.jpg" />
+                        </a>
+                        <a href="javascript:;" class="pro_tit">待开发项目五</a>
+                    </li>
+                    <li class="pro_item col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                        <a class="pro_pic" href="javascript:;">
+                            <img data-lazy-src="upload/pro-6.jpg" />
+                        </a>
+                        <a href="javascript:;" class="pro_tit">待开发项目六</a>
+                    </li>
+                    <li class="pro_item col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                        <a class="pro_pic" href="javascript:;">
+                            <img data-lazy-src="upload/pro-7.jpg" />
+                        </a>
+                        <a href="javascript:;" class="pro_tit">待开发项目七</a>
+                    </li>
+                    <li class="pro_item col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                        <a class="pro_pic" href="javascript:;">
+                            <img data-lazy-src="upload/pro-8.jpg" />
+                        </a>
+                        <a href="javascript:;" class="pro_tit">待开发项目八</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- 最新资讯 -->
+            <div class="row index_section_hd text-center">
+                最新资讯
+            </div>
+            <div class="row">
+                <!-- news_slide -->
+                <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                    <div id="news_slide" class="news_slide_box">
+                        <div class="bd">
+                            <ul>
+                                <li>
+                                    <a class="pic" href="public/pinyougou/index.html" target="_blank">
+                                        <img data-lazy-src="upload/pic01.png" />
+                                        <span class="title">
+                                            品优购
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="pic" href="public/resume/index.html" target="_blank">
+                                        <img data-lazy-src="upload/news2.jpg" />
+                                        <span class="title">
+                                            个人简历
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="pic" href="public/alibaixiu/index.html" target="_blank">
+                                        <img data-lazy-src="upload/pic03.png" />
+                                        <span class="title">
+                                            阿里百秀
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <span class="prev"></span>
+                        <span class="next"></span>
+                    </div>
+                </div>
+                <!-- news_list -->
+                <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+                    <ul class="news_list">
+                        <li>
+                            <div class="news_pic col-lg-3 col-md-3 col-sm-4 col-xs-12">
+                                <a href="https://jquery.com/">
+                                    <img data-lazy-src="upload/list1.jpg" />
+                                </a>
+                            </div>
+                            <div class="col-lg-9 col-md-9 col-sm-8 col-xs-12">
+                                <a href="https://jquery.com/" class="news_tit">前端javascript框架 （jQuery） </a>
+                                <p class="news_time">2020-05-1</p>
+                                <p class="news_desc">jQuery是一个快速，小型且功能丰富的JavaScript库。借助易于使用的API（可在多种浏览器中使用），使HTML文档的遍历和操作，事件处理，动画和Ajax等事情变得更加简单。</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="news_pic col-lg-3 col-md-3 col-sm-4 col-xs-12">
+                                <a href="https://v3.bootcss.com/">
+                                    <img data-lazy-src="upload/list2.jpg" />
+                                </a>
+                            </div>
+                            <div class="col-lg-9 col-md-9 col-sm-8 col-xs-12">
+                                <a href="https://v3.bootcss.com/" class="news_tit">前端响应式框架 （bootstrap）</a>
+                                <p class="news_time">2020-05-1</p>
+                                <p class="news_desc">Bootstrap 提供了一套响应式、移动设备优先的流式栅格系统，随着屏幕或视口（viewport）尺寸的增加，系统会自动分为最多12列。</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="news_pic col-lg-3 col-md-3 col-sm-4 col-xs-12">
+                                <a href="public/m.suning(rem+less)/main.html">
+                                    <img data-lazy-src="upload/pro-4.PNG" />
+                                </a>
+                            </div>
+                            <div class="col-lg-9 col-md-9 col-sm-8 col-xs-12">
+                                <a href="public/m.suning(rem+less)/main.html" class="news_tit">移动端静态页面仿苏宁易购</a>
+                                <p class="news_time">2020-05-1</p>
+                                <p class="news_desc">首页→爆款手机→5G手机→华为Nova7→详情页</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 右侧导航栏 -->
+    <div class="rightNav hidden-sm hidden-xs">
+        <ul>
+            <li><em>^</em>返回顶部</li>
+            <li><em>1</em>主要案例</li>
+            <li><em>2</em>开发软件</li>
+            <li><em>3</em>移动端网页</li>
+            <li><em>4</em>最新资讯</li>
+        </ul>
+    </div>
+
+    <!-- footer底部 -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <div class="footer_ewm col-lg-3 col-md-3 col-sm-3 hidden-xs">
+                        <img data-lazy-src="upload/code.png" src="upload/code.png" />
+                    </div>
+                    <ul class="footer_contact col-lg-9 col-md-9 col-sm-9 hidden-xs">
+                        <li>电话：<i>13827811578</i></li>
+                        <li>微信号：<i>Gu138278</i></li>
+                        <li>邮箱：<a href="https://www.126.com/">guwenlie@126.com</a></li>
+                        <li>若贵公司觉得本人合适您，请加本人微信，或电话联系本人</li>
+                    </ul>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <ul class="footer_nav hidden-xs">
+                        <li><a href="javascript:;">主要案例</a></li>
+                        <li><a href="javascript:;">开发软件</a></li>
+                        <li><a href="javascript:;">移动端页面</a></li>
+                        <li><a href="javascript:;">最新资讯</a></li>
+                    </ul>
+                    <p style="margin-top: 5px;">
+                        <a href="public/resume/index.html" style="color: #e8a651;">
+                            本人的个人简历，请HR查收，谢谢
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- TouchSlide轮播图插件 -->
+    <script src="js/TouchSlide.1.1.js"></script>
+    <script>
+        // 调用TouchSlide()方法 
+        // 一般将 图片元素包裹在 .bd类内包含ul ； 导航元素包含在.hd中
+        // 下一页按钮类名 .next    上一页按钮类名 .prev   导航元素类名 .on
+        TouchSlide({
+            // 执行对象 必须为id对象
+            slideCell: "#slideBox",
+            //  导航元素对象 默认是.hd li
+            titCell: ".hd li",
+            // 切换元素的包裹层对象 默认 .bd 
+            mainCell: ".bd ul",
+            // 滚动效果 left：左滚动；|| leftLoop：左循环滚动；
+            effect: "leftLoop",
+            // autoPlay 自动滚动 默认flase
+            autoPlay: true, //自动播放
+            // 切换图片时间 毫秒 默认值 200
+            delayTime: 200,
+            // 自动滚动时间 毫秒 默认值 2500
+            interTime: 5000,
+        });
+        TouchSlide({
+            slideCell: "#news_slide",
+            mainCell: ".bd ul",
+            effect: "leftLoop",
+            autoPlay: true, //自动播放
+            interTime: 3000
+        });
+    </script>
+
+    <!-- 必须在这里引入我们的懒加载插件 -->
+    <script src="js/EasyLazyload.min.js"></script>
+    <script>
+        lazyLoadInit({
+            // 图片即将显示时覆盖层的颜色
+            coverColor: "white",
+            // 图片距离屏幕底部出现时间点的距离差值
+            offsetBottom: 0,
+            offsetTopm: 0,
+            // 显示出图片的时间
+            showTime: 888,
+        });
+    </script>
+</body>
+
+</html>

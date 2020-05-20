@@ -1,0 +1,305 @@
+a {
+  text-decoration: none;
+}
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 21.33333333px;
+  }
+}
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 25px;
+  }
+}
+@media screen and (min-width: 384px) {
+  html {
+    font-size: 25.6px;
+  }
+}
+@media screen and (min-width: 400px) {
+  html {
+    font-size: 26.66666667px;
+  }
+}
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 27.6px;
+  }
+}
+@media screen and (min-width: 424px) {
+  html {
+    font-size: 28.26666667px;
+  }
+}
+@media screen and (min-width: 480px) {
+  html {
+    font-size: 32px;
+  }
+}
+@media screen and (min-width: 540px) {
+  html {
+    font-size: 36px;
+  }
+}
+@media screen and (min-width: 720px) {
+  html {
+    font-size: 48px;
+  }
+}
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 50px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  html {
+    font-size: 68.26666667px;
+  }
+}
+body {
+  min-width: 320px;
+  max-width: 1024px;
+  margin: 0 auto;
+  line-height: 1.5;
+  font-family: Arial, Helvetica;
+  background-color: #f7f7f7;
+}
+ul li {
+  list-style: none;
+}
+.nav {
+  width: 100%;
+  height: 1.76rem;
+  background-color: #fff;
+  line-height: 1.76rem;
+}
+.nav .nav-back {
+  float: left;
+  width: 1.6rem;
+  height: 100%;
+}
+.nav .nav-back a {
+  position: relative;
+}
+.nav .nav-back a::before {
+  content: "";
+  position: absolute;
+  top: 0.6rem;
+  left: 0.74rem;
+  display: inline-block;
+  width: 0.5rem;
+  height: 0.5rem;
+  border: solid #353d44;
+  border-width: 1px 0  0  1px;
+  transform: rotate(-45deg);
+}
+.nav .nav-title {
+  float: left;
+  width: auto;
+  font-size: 0.68rem;
+  color: #3284e6;
+  font-weight: 700;
+}
+.nav .nav-focus {
+  float: left;
+  width: 2.24rem;
+  height: 0.96rem;
+  margin: 0.4rem 0 0 0.2rem;
+}
+.nav .nav-focus a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.nav .nav-focus a img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.content {
+  width: 100%;
+}
+.content .top-bg {
+  width: 100%;
+  height: 1.2rem;
+  padding-top: 0.36rem;
+  background: url(../upload/phone-bg.jpg) no-repeat;
+  background-size: 100% auto;
+  background-position: bottom;
+}
+.content .top-bg a {
+  overflow: hidden;
+  display: block;
+  width: 14.04rem;
+  height: 1.2rem;
+  border-radius: 0.6rem;
+  background-color: #fff;
+  margin-left: 0.48rem;
+}
+.content .top-bg a .seach-sou {
+  float: left;
+  width: 0.8rem;
+  height: 0.8rem;
+  display: block;
+  background-image: url(../images/seach.png);
+  background-size: 100%;
+  margin: 0.2rem 0.1rem 0 0.3rem;
+}
+.content .top-bg a .seach-text {
+  float: left;
+  height: 1.2rem;
+  line-height: 1.2rem;
+  font-size: 0.56rem;
+  color: #999;
+}
+.content .bottom-bg {
+  width: 100%;
+  height: 5.6rem;
+  background: url(../upload/phone-bg2.jpg) no-repeat;
+  background-size: 100% auto;
+  padding: 0.48rem 0 0.6rem 0;
+}
+.content .bottom-bg .banner {
+  width: 12.8rem;
+  height: 100%;
+  margin-left: 1rem;
+}
+.content .bottom-bg .banner ul {
+  margin: 0;
+  padding: 0;
+}
+.content .bottom-bg .banner ul li {
+  width: 12.8rem;
+  height: 100%;
+}
+.content .bottom-bg .banner ul li a {
+  width: 100%;
+  height: 100%;
+}
+.content .bottom-bg .banner ul li a img {
+  width: 100%;
+  height: 100%;
+}
+.content .icon-bg {
+  width: 100%;
+}
+.content .icon-bg a {
+  display: block;
+  width: 100%;
+  height: 1.14rem;
+  margin-bottom: -1px;
+}
+.content .icon-bg a img {
+  width: 100%;
+  height: 100%;
+}
+.content .icon-bg .iconx-bg {
+  width: 100%;
+  height: 6.7rem;
+  padding-bottom: 0.84rem;
+  background: url(../upload/phone-bg4.jpg) no-repeat;
+  background-size: 100% 100%;
+}
+.content .icon-bg .iconx-bg .top-nav {
+  width: 14.04rem;
+  height: 3.1rem;
+  margin: 0 auto;
+  display: flex;
+}
+.content .icon-bg .iconx-bg .top-nav .top-tap {
+  flex: 1;
+  height: 2.26rem;
+  padding-top: 0.84rem;
+}
+.content .icon-bg .iconx-bg .top-nav .top-tap img {
+  display: block;
+  width: 1.6rem;
+  height: 1.6rem;
+  margin: 0 auto;
+}
+.content .icon-bg .iconx-bg .top-nav .top-tap span {
+  width: 100%;
+  display: block;
+  text-align: center;
+  font-size: 0.44rem;
+  color: #fff;
+  margin: 0.26rem auto 0;
+}
+.content .icon-bg .iconx-bg .bottom-nav {
+  width: 14.04rem;
+  height: 3.6rem;
+  margin: 0 auto;
+  display: flex;
+}
+.content .icon-bg .iconx-bg .bottom-nav .bottom-tap {
+  flex: 1;
+  height: 2.76rem;
+  padding-top: 0.84rem;
+}
+.content .icon-bg .iconx-bg .bottom-nav .bottom-tap img {
+  display: block;
+  width: 1.6rem;
+  height: 1.6rem;
+  margin: 0 auto;
+}
+.content .icon-bg .iconx-bg .bottom-nav .bottom-tap span {
+  width: 100%;
+  display: block;
+  text-align: center;
+  font-size: 0.44rem;
+  color: #fff;
+  margin: 0.26rem auto 0;
+}
+.content .xinpin-bg {
+  width: 100%;
+}
+.content .xinpin-bg .xinpin-top a {
+  display: block;
+  height: 4rem;
+}
+.content .xinpin-bg .xinpin-top a img {
+  width: 100%;
+  height: 4rem;
+}
+.content .xinpin-bg .xinpin-bottom a {
+  float: left;
+  display: block;
+  width: 7.5rem;
+  height: 3.2rem;
+}
+.content .xinpin-bg .xinpin-bottom a img {
+  width: 7.5rem;
+  height: 3.2rem;
+}
+.footer {
+  display: flex;
+  position: fixed;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 1.98rem;
+  background: #fff;
+  border-top: 1px solid #ddd;
+}
+.footer a {
+  flex: 1;
+  height: 1.8rem;
+  padding-top: 0.2rem;
+}
+.footer a img {
+  display: block;
+  margin: 0 auto;
+  width: 0.96rem;
+  height: 0.96rem;
+}
+.footer a span {
+  display: block;
+  color: #989898;
+  font-size: 0.44rem;
+  text-align: center;
+}

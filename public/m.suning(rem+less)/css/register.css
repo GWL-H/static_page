@@ -1,0 +1,271 @@
+a {
+  text-decoration: none;
+}
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 21.33333333px;
+  }
+}
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 25px;
+  }
+}
+@media screen and (min-width: 384px) {
+  html {
+    font-size: 25.6px;
+  }
+}
+@media screen and (min-width: 400px) {
+  html {
+    font-size: 26.66666667px;
+  }
+}
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 27.6px;
+  }
+}
+@media screen and (min-width: 424px) {
+  html {
+    font-size: 28.26666667px;
+  }
+}
+@media screen and (min-width: 480px) {
+  html {
+    font-size: 32px;
+  }
+}
+@media screen and (min-width: 540px) {
+  html {
+    font-size: 36px;
+  }
+}
+@media screen and (min-width: 720px) {
+  html {
+    font-size: 48px;
+  }
+}
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 50px;
+  }
+}
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 68.26666667px;
+  }
+}
+body {
+  position: relative;
+  min-width: 320px;
+  max-width: 750px;
+  height: 100%;
+  margin: 0 auto;
+  line-height: 1.5;
+  font-family: Arial, Helvetica;
+  color: #333;
+  background-color: #fff;
+  box-sizing: border-box;
+  min-height: 26.6rem;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+input {
+  background-color: transparent;
+  border: 0 none;
+}
+header {
+  overflow: hidden;
+  padding: 0.26rem 0.48rem 0;
+}
+.header {
+  position: relative;
+  float: right;
+  height: 1.2rem;
+  line-height: 1rem;
+}
+.header a {
+  display: inline-block;
+  color: #222;
+  font-size: 0.48rem;
+  text-align: center;
+  vertical-align: middle;
+}
+.header a:nth-child(1) {
+  margin-right: 0.48rem;
+}
+.header a:nth-child(2) {
+  margin-left: 0.48rem;
+}
+.header a:nth-child(2)::before {
+  content: "";
+  display: inline-block;
+  width: 0.02rem;
+  height: 0.7rem;
+  border-left: 1px solid #ddd;
+  position: absolute;
+  left: 50%;
+  top: 0.2rem;
+}
+.login-content {
+  margin-top: 1.12rem;
+  padding: 0 1.5rem;
+}
+.login-content h2 {
+  margin: 0;
+  font-size: 0.72rem;
+  font-weight: 500;
+}
+.login-content .tel_inputBox {
+  margin-top: 1.2rem;
+  width: 12rem;
+  height: 1.8rem;
+  border-bottom: 1px solid #ddd;
+  line-height: 1.8rem;
+}
+.login-content .tel_inputBox input {
+  color: #333;
+  font-size: 0.6rem;
+  outline: none;
+  border: 0;
+}
+.login-content .tel_inputBox input::placeholder {
+  color: #ccc;
+}
+.login-content .yzm_inputBox {
+  overflow: hidden;
+  margin-top: 0.6rem;
+  width: 12rem;
+  height: 1.56rem;
+}
+.login-content .yzm_inputBox .yzm label {
+  box-sizing: border-box;
+  float: left;
+  width: 1.56rem;
+  height: 1.56rem;
+  border-bottom: 1px solid #ccc;
+  margin-right: 0.48rem;
+  font-size: 0.96rem;
+  text-align: center;
+  line-height: 1.56rem;
+}
+.login-content .yzm_inputBox .yzm label:nth-child(4) {
+  margin-right: 0;
+}
+.login-content .yzm_inputBox a {
+  float: right;
+  display: block;
+  width: 3.96rem;
+  height: 1.56rem;
+  color: #666;
+  font-size: 0.6rem;
+  text-align: center;
+  line-height: 1.56rem;
+  border: 1px solid #ccc;
+  border-radius: 0.2rem;
+  box-sizing: border-box;
+}
+.login-content .tixing {
+  font-size: 0.48rem;
+  color: #999;
+  margin-top: 0.24rem;
+}
+.login-content .btnBox {
+  margin-top: 1.2rem;
+  text-align: center;
+}
+.login-content .btnBox a:nth-child(1) {
+  display: block;
+  width: 12rem;
+  height: 1.8rem;
+  line-height: 1.8rem;
+  font-size: 0.68rem;
+  color: #222;
+  font-weight: 700;
+  background-color: #fc0;
+  border-radius: 0.4rem;
+}
+.login-content .btnBox a:nth-child(2) {
+  display: block;
+  margin-top: 0.84rem;
+  font-size: 0.6rem;
+  color: #333;
+}
+footer {
+  width: 9.6rem;
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0.84rem;
+  font-size: 0.4rem;
+  text-align: center;
+}
+footer .f-loginp {
+  position: relative;
+  color: #999;
+  margin-top: 0;
+  margin-bottom: 0.38rem;
+}
+footer .f-loginp::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0.28rem;
+  left: 0;
+  width: 3rem;
+  border-bottom: 1px solid #ddd;
+}
+footer .f-loginp::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0.28rem;
+  right: 0;
+  width: 3rem;
+  border-bottom: 1px solid #ddd;
+}
+footer .f-icons {
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: 0.7rem;
+}
+footer .f-icons a {
+  float: left;
+  display: block;
+  width: 1.32rem;
+  height: 1.32rem;
+  margin-right: 2.8rem;
+}
+footer .f-icons a img {
+  width: 100%;
+  height: 100%;
+}
+footer .f-icons a:nth-child(3) {
+  margin-right: 0;
+}
+footer .f-agree {
+  margin: 0;
+  text-align: left;
+  color: #999;
+}
+footer .f-agree b {
+  display: inline-block;
+  margin-left: -5px;
+  color: #101010;
+}
+footer .f-agree a {
+  display: inline-block;
+  color: #101010;
+  text-decoration: underline;
+}

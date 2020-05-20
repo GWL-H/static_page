@@ -1,0 +1,244 @@
+// 首页样式
+// @import 导入的意思 可以把一个样式导入到另一个样式里面
+// link是把一个样式文件 引入到html页面里面
+@import "common";
+
+body {
+    min-width: 320px;
+    width: 15rem;
+    margin: 0 auto;
+    line-height: 1.5;
+    font-family: Arial, Helvetica;
+    background-color: #f7f7f7;
+}
+ul li{
+    list-style: none;
+}
+@baseFont: 50;
+// 顶部搜索框
+
+.search-content {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 15rem;
+    height: 180rem / @baseFont;
+    .index-nav-bg{
+        width: 15rem;
+        height: 180rem / @baseFont;
+        position: absolute;
+        top: 0;
+        left: 0;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .top-type {
+        position: relative;
+        .top-type-one{
+            display: flex;
+            justify-content: space-between;
+            width: 682rem / @baseFont;
+            height: 88rem / @baseFont;
+            margin: 0 auto;
+            a:nth-child(1) img{
+                width: 36rem / @baseFont;
+                height: 60rem / @baseFont;
+                margin-top: 17rem / @baseFont;
+            }
+            a:nth-child(2) img{
+                width: 450rem / @baseFont;
+                height: 55rem / @baseFont;
+                margin: 18rem / @baseFont 50rem / @baseFont 0 0;
+            }
+            a:nth-child(3) img{
+                width: 36rem / @baseFont;
+                height: 60rem / @baseFont;
+                margin-top: 17rem / @baseFont;
+            }
+        }
+        .top-type-two{
+            width: 750rem / @baseFont;
+            height: 92rem / @baseFont;
+            padding: 0 24rem / @baseFont;
+            .top-type-bd{
+                position: relative;
+                width: 702rem / @baseFont;
+                height: 88rem / @baseFont;
+            }
+            a {
+                position: absolute;
+                display: block;
+                width: 100%;
+                height: 88rem / @baseFont;
+            }
+            i {
+                position: absolute;
+                top: 25rem / @baseFont;
+                left: 20rem / @baseFont;
+                width: 36rem / @baseFont;
+                height: 36rem / @baseFont;
+                background: url(../images/search.png) no-repeat;
+                background-size: 36rem / @baseFont ;
+            }
+            form {
+                display: block;
+                height: 88rem / @baseFont;
+                input{
+                    margin: 12rem / @baseFont 0;
+                    width: 87%;
+                    height: 64rem / @baseFont;
+                    line-height: 64rem / @baseFont;
+                    border-radius: 32rem / @baseFont;
+                    border: 0;
+                    background-color: #fff;
+                    color: #999;
+                    font-size: 28rem / @baseFont;
+                    padding: 3rem / @baseFont 20rem / @baseFont  0  65rem / @baseFont;
+                }
+            }
+            
+        }
+    }
+}
+
+// 主体部分
+.content{
+    position: absolute;
+    top: 180rem / @baseFont;
+    width: 15rem;
+}
+// banner
+.banner{
+    overflow: hidden;
+    height: 260rem / @baseFont;
+    img{
+        width: 15rem;
+        height: 260rem / @baseFont;
+    }
+    ul{
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 0;
+        padding: 0 ;
+        li{
+            overflow: hidden;
+            width: 702rem / @baseFont;
+            height: 260rem / @baseFont;
+            padding: 0 24rem / @baseFont;
+            
+            a {
+                position: absolute;
+                overflow: hidden;
+                display: block;
+                width: 702rem / @baseFont;
+                height: 260rem / @baseFont;
+                border-radius: 30rem / @baseFont;
+                img{
+                    width: 750rem / @baseFont;
+                    height: 368rem / @baseFont;
+                    position: absolute;
+                    bottom: 0;
+                    left: -18rem / @baseFont;
+                }
+            }
+        }
+    }
+}
+// hor-view
+.hor-view{
+    display: flex;
+    height: 210rem / @baseFont;
+    a {
+        flex: 1;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+// enter-wrapper
+.enter-wrapper{
+    ul{
+        margin: 0;
+        padding: 0;
+    }
+    li{
+        width: 15rem;
+        height: 284rem / @baseFont;
+        font-size: 22rem / @baseFont;
+        text-align: center;
+        a{
+            float: left;
+            display: block;
+            width: 150rem / @baseFont;
+            height: 142rem / @baseFont;
+            color: #666;
+            img{
+                width: 84rem / @baseFont;
+                height: 84rem / @baseFont;
+            }
+            span{
+                display: block;
+            }
+        }
+    }
+}
+// new
+.new{
+    margin-top: 50rem / @baseFont;
+    height: 234rem / @baseFont;
+    a{
+        float: left;
+        display: block;
+        width: 186.25rem / @baseFont;
+        height: 234rem / @baseFont;
+        &:nth-child(1){
+            width: 373.5rem / @baseFont;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }  
+}
+
+
+// 底部空白kong
+.kong{
+    height: 100px;
+}
+
+
+// footed-tab
+.footed-tab{
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    width: 15rem;
+    height: 100rem / @baseFont;
+    border-top: 1px solid #EEE;
+    background-color: #fff;
+    a{
+        flex: 1;
+        font-size: 20rem / @baseFont;
+        color: #666;
+        text-align: center;
+        img{
+            margin: 12rem / @baseFont 51rem / @baseFont 0;
+            width: 48rem / @baseFont;
+            height: 48rem / @baseFont;
+        }
+        span{
+            display: block;
+            margin-top: -8rem / @baseFont;
+        }
+        &:nth-child(1){
+            color: #000;
+            font-weight: bold;
+        }
+    }
+}

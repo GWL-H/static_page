@@ -1,0 +1,640 @@
+/* 公共部分和大概总体的布局 */
+@baseFace:136;
+
+section {
+    width: 100%
+}
+
+section.page_one {
+    background: url(../images/bg.jpg) no-repeat center center;
+    background-size: 100% 100%;
+    animation: 0.4s myscale 1;
+    color: #fff
+}
+
+section.page_two .con_wrap,
+section.page_three .con_wrap,
+section.page_four .con_wrap,
+section.page_five .con_wrap {
+    transform: translateY(200rem / @baseFace);
+    -ms-transform: translateY(200rem / @baseFace);
+    -moz-transform: translateY(200rem / @baseFace);
+    -webkit-transform: translateY(200rem / @baseFace);
+    -o-transform: translateY(200rem / @baseFace);
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -moz-opacity: 0;
+    -khtml-opacity: 0;
+    animation: mytranslateY 2s;
+    /* 动画结束后停留到动画结束的位置 */
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards
+}
+
+.page_one,
+.page_two,
+.page_three,
+.page_four,
+.page_five {
+    display: none
+}
+
+.page_two {
+    background: -webkit-linear-gradient(bottom, #f3e7e9, #e3eeff);
+    background: -ms-linear-gradient(bottom, #f3e7e9, #e3eeff);
+    background: -o-linear-gradient(bottom, #f3e7e9, #e3eeff);
+    background: -moz-linear-gradient(bottom, #f3e7e9, #e3eeff);
+}
+
+.page_three {
+    background: -webkit-linear-gradient(bottom, #dad4ec, #f3e7e9);
+    background: -ms-linear-gradient(bottom, #dad4ec, #f3e7e9);
+    background: -o-linear-gradient(bottom, #dad4ec, #f3e7e9);
+    background: -moz-linear-gradient(bottom, #dad4ec, #f3e7e9);
+}
+
+.page_four {
+    background: -webkit-linear-gradient(bottom, #f3e7e9, #e3eeff);
+    background: -ms-linear-gradient(bottom, #f3e7e9, #e3eeff);
+    background: -o-linear-gradient(bottom, #f3e7e9, #e3eeff);
+    background: -moz-linear-gradient(bottom, #f3e7e9, #e3eeff);
+}
+
+.page_five {
+    background: -webkit-linear-gradient(bottom, #dad4ec, #f3e7e9);
+    background: -ms-linear-gradient(bottom, #dad4ec, #f3e7e9);
+    background: -o-linear-gradient(bottom, #dad4ec, #f3e7e9);
+    background: -moz-linear-gradient(bottom, #dad4ec, #f3e7e9);
+}
+
+
+/* 其他页主体以及标题公共部分 */
+
+.con_wrap {
+    width: 75%;
+    margin: 0 auto;
+    padding: 12rem / @baseFace 0;
+    overflow: hidden
+}
+
+.tit_wrap {
+    position: relative;
+    text-align: center
+}
+
+.tit_wrap h1 {
+    width: 100%;
+    line-height: 50rem / @baseFace;
+}
+
+.tit_wrap h1:after {
+    content: "";
+    width: 100%;
+    position: absolute;
+    top: 70rem / @baseFace;
+    left: 0;
+    border: 1px dashed #9eddf2;
+    -webkit-animation: 25s left_widthsmaller linear 1s infinite;
+    -moz-animation: 25s left_widthsmaller linear 1s infinite;
+    -ms-animation: 25s left_widthsmaller linear 1s infinite;
+    -o-animation: 25s left_widthsmaller linear 1s infinite;
+    animation: 25s left_widthsmaller linear 1s infinite
+}
+
+.tit_wrap .scissors {
+    width: 0%;
+    height: 20px;
+    position: absolute;
+    top: 70rem / @baseFace;
+    right: 0;
+    transform: translateY(-50%);
+    -webkit-animation: 25s left_widthbigger linear 1s infinite;
+    -moz-animation: 25s left_widthbigger linear 1s infinite;
+    -ms-animation: 25s left_widthbigger linear 1s infinite;
+    -o-animation: 25s left_widthbigger linear 1s infinite;
+    animation: 25s left_widthbigger linear 1s infinite
+}
+
+.tit_wrap .scissors span {
+    width: 20px;
+    height: 20px;
+    float: left;
+    background: url(../images/sprite_img.png) no-repeat -37px -50px;
+}
+
+.tit_wrap h2 {
+    font-size: 22rem / @baseFace;
+    margin-top: 50rem / @baseFace;
+}
+
+
+/* 相邻选择器 */
+
+.tit_wrap+div {
+    margin-top: 30rem / @baseFace;
+}
+
+
+/* 右侧导航栏 */
+
+aside {
+    width: 40rem / @baseFace;
+    min-width: 20px;
+    display: block;
+    position: fixed;
+    top: 40%;
+    right: 10rem / @baseFace;
+    transform: translate(-25%, 0);
+    -webkit-transform: translate(-25%, 0);
+    -moz-transform: translate(-25%, 0);
+    -ms-transform: translate(-25%, 0);
+    -o-transform: translate(-25%, 0)
+}
+
+aside a {
+    width: 14px;
+    height: 14px;
+    display: block;
+    position: relative;
+    margin-top: 25px;
+    border-radius: 50%;
+    background-color: #d9d9d9;
+    cursor: pointer
+}
+
+aside a span {
+    width: 70px;
+    height: 20px;
+    display: none;
+    position: absolute;
+    top: -2px;
+    right: 25px;
+    color: #80d6f2;
+    font-size: 16px;
+    text-align: right
+}
+
+aside a:hover span {
+    display: block;
+}
+
+aside .cur_a {
+    background-color: #80d6f2
+}
+
+aside .cur_a span {
+    color: #80d6f2;
+}
+
+
+/* 首页导航栏 */
+
+nav {
+    width: 100%;
+    position: relative
+}
+
+nav .nav_wrap {
+    width: 80%;
+    margin: 0 auto;
+    padding: 25rem / @baseFace 0;
+    overflow: hidden
+}
+
+.resume_logo {
+    width: 20%;
+    float: left
+}
+
+.resume_logo a {
+    font-size: 45rem / @baseFace;
+    
+}
+
+.nav_bar {
+    width: 60%;
+    float: right
+}
+
+.nav_bar ul li {
+    width: 20%;
+    float: left;
+    font-size: 18rem / @baseFace
+}
+
+.nav_bar ul li a {
+    display: block;
+    padding: 20rem / @baseFace 0;
+    margin: 0 15rem / @baseFace;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    /* 鼠标经过颜色的过渡效果 */
+    transition: color .5s ease-in;
+    -moz-transition: color .5s ease-in;
+    -webkit-transition: color .5s ease-in;
+    -o-transition: color .5s ease-in
+}
+
+.nav_bar ul li a:hover {
+    color: #80d6f2
+}
+
+.nav_bar ul li a:after {
+    content: "";
+    width: 0;
+    height: 1rem / @baseFace;
+    position: absolute;
+    left: 0;
+    bottom: 10rem / @baseFace;
+    background: #80d6f2;
+    transition: width .5s ease-in;
+    -moz-transition: width .5s ease-in;
+    -webkit-transition: width .5s ease-in;
+    -o-transition: width .5s ease-in
+}
+
+.nav_bar ul li a:hover:after {
+    width: 100%
+}
+
+
+/* 首页内容 */
+
+.cen_con {
+    width: 60%;
+    height: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    text-align: center;
+    overflow: hidden
+}
+
+.portrait {
+    height: 32%;
+    min-height: 100rem / @baseFace;
+    margin: 0 auto 6%;
+    padding: 6rem / @baseFace;
+    text-align: center
+}
+
+.portrait img {
+    height: 100%;
+    vertical-align: middle;
+    border-radius: 50%
+}
+
+.cen_text {
+    height: 60%
+}
+
+.cen_text h2 {
+    height: 18%;
+    min-height: 38rem / @baseFace;
+    margin: 0;
+    font-size: 22rem / @baseFace;
+}
+
+.cen_text h3 {
+    font-size: 18rem / @baseFace;
+    height: 18%;
+    min-height: 32rem / @baseFace;
+    margin: 0;
+}
+
+.cen_text hr {
+    height: 1rem / @baseFace;
+    background-color: #999;
+    border: 0;
+    margin: 0 auto 26rem / @baseFace auto;
+    -webkit-animation: to_width 1s ease-in 0s 1;
+    -moz-animation: to_width 1s ease-in 0s 1;
+    -ms-animation: to_width 1s ease-in 0s 1;
+    -o-animation: to_width 1s ease-in 0s 1;
+    animation: to_width 1s ease-in 0s 1;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards
+}
+
+
+/* 下一页按钮 */
+
+.down_arrow {
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.down_arrow a {
+    width: 51px;
+    height:  51px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer
+}
+
+.down_arrow a span {
+    width: 18px;
+    height: 18px;
+    display: block;
+    margin: 15px;
+    background: url(../images/sprite_img.png) no-repeat -18px -50px;
+}
+
+.down_arrow a:hover {
+    border: 1px solid #80d6f2
+}
+
+
+
+/* 第二页主体内容 */
+
+.myinfo {
+    width: 100%;
+    float: left;
+    padding: 0 20rem / @baseFace;
+}
+
+.myinfo table {
+    width: 100%;
+    margin: 10rem / @baseFace auto
+}
+
+.myinfo table tr td {
+    font-size: 18rem / @baseFace;
+    padding: 12rem / @baseFace 15rem / @baseFace 12rem /@baseFace;
+    text-align: left;
+    font-weight: normal;
+}
+
+.myinfo table tr td img {
+    max-width: 313px;
+    width: 50%;
+    border-radius: 50%
+}
+
+
+.myinfo table tr td a {
+    display: inline-block;
+    color: #666;
+    margin-right: 20rem / @baseFace;
+}
+
+.myinfo table tr:last-child td p {
+    font-size: 18rem / @baseFace;
+    padding: 20rem / @baseFace 0 10rem / @baseFace;
+}
+
+
+/* 第三页内容部分 */
+@media screen and (max-width: 1300px) {
+    .canvas_wrap {
+        display: none;
+    }
+    .skill_con  .text_wrap{
+        width: 100%;
+    }
+}
+.skill_con {
+    width: 100%;
+    overflow: hidden
+}
+
+.canvas_wrap {
+    width: 50%;
+    float: left;
+    overflow: hidden;
+    padding-top: 20rem / @baseFace ;
+}
+
+.text_wrap {
+    width: 50%;
+    float: left;
+    padding: 20rem / @baseFace 0 0 30rem / @baseFace;
+}
+
+.text_wrap p {
+    font-size: 18rem / @baseFace;
+    line-height: 20px;
+    padding: 10rem / @baseFace 0;
+}
+
+.canvas_con {
+    width: 150px;
+    height: 150px;
+    margin: 10rem / @baseFace 12px 15rem / @baseFace 0;
+    float: left;
+    position: relative
+}
+
+.text_con {
+    width: 150px;
+    height: 80px;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    text-align: center;
+    padding: 20px;
+}
+
+.text_con p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+/* 第四页内容部分 */
+
+.work_con {
+    position: relative
+}
+
+.work_text {
+    width: 100%;
+    padding: 10rem / @baseFace 0 47rem / @baseFace 159rem / @baseFace;
+    position: relative
+}
+
+.work_text:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 140rem / @baseFace;
+    border-left: solid 1rem / @baseFace #80d6f2
+}
+
+.work_con:last-child .work_text {
+    padding-bottom: 0;
+}
+
+.programe {
+    position: relative;
+    overflow: hidden
+}
+
+.work_time {
+    width: 120rem / @baseFace;
+    height: 120rem / @baseFace;
+    float: left;
+    padding: 35rem / @baseFace 0;
+    font-size: 18rem / @baseFace;
+    color: #fff;
+    background-color: #E86064;
+    text-align: center;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    position: absolute;
+    top: 20rem / @baseFace;
+    left: 0
+}
+
+.triangle-left {
+    width: 0;
+    height: 0;
+    border-top: 15rem / @baseFace solid transparent;
+    border-bottom: 15rem / @baseFace solid transparent;
+    border-right: 15rem / @baseFace solid #fff;
+    position: absolute;
+    top: 20rem / @baseFace;
+    left: 160rem / @baseFace;
+}
+
+.exCon {
+    background: #fff;
+    border-bottom: 4rem / @baseFace solid #e5e5e5;
+    padding: 10rem / @baseFace 15rem / @baseFace;
+    margin-left: 15rem / @baseFace;
+    text-align: left
+}
+
+.exCon h4 {
+    color: #666;
+    padding-bottom: 3rem / @baseFace;
+}
+
+.exCon h5 {
+    color: #666
+}
+
+.exCon p {
+    color: #666;
+    line-height: 21px;
+}
+
+
+/* 第五页内容部分 */
+
+
+/* ul.con_style 类名是con_style的标签ul */
+
+ul.con_style {
+    overflow: hidden;
+}
+
+ul.con_style li {
+    width: 33.33%;
+    float: left;
+    margin: 10rem / @baseFace 0 20rem / @baseFace 0;
+    overflow: hidden
+}
+
+ul.con_style li span {
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin: 0 auto 20rem / @baseFace;
+    background: url("../images/sprite_img.png");
+}
+
+ul.con_style li:nth-child(1) span {
+    background-position: 0 -70px
+}
+
+ul.con_style li:nth-child(2) span {
+    background-position: -50px -70px
+}
+
+ul.con_style li:nth-child(3) span {
+    background-position: -100px -70px
+}
+
+ul.con_style li p {
+    text-align: center;
+    font-size: 18rem / @baseFace;
+}
+
+
+/* 表单 */
+
+.contact_info {
+    width: 100%;
+}
+
+.contact_info form {
+    width: 100%;
+    overflow: hidden;
+    padding: 5px 0;
+}
+
+.contact_info form label {
+    width: 33.33%;
+    padding-right: 10px;
+    height: 70rem / @baseFace;
+    min-height: 40px;
+    float: left
+}
+
+.contact_info form label p {
+    color: red;
+    line-height: 20px;
+    padding: 0 12rem / @baseFace;
+}
+
+.contact_info form label:nth-child(3) {
+    padding-right: 0;
+}
+
+.contact_info form label:nth-child(4) {
+    width: 100%;
+    height: 200rem / @baseFace;
+    padding: 0;
+}
+
+.contact_info form input[type="text"] {
+    width: 100%;
+    float: left;
+    background: #ffffff;
+    color: #333
+}
+
+.contact_info form textarea {
+    width: 100%;
+    height: 180rem / @baseFace;
+    // min-height: 100px;
+    background: #ffffff;
+    resize: none;
+    color: #333
+}
+
+.contact_info form button {
+    color: #fff;
+    padding: 6px 18rem / @baseFace;
+    font-size: 14rem / @baseFace;
+    border-radius: 5rem / @baseFace;
+    cursor: pointer;
+    border: 1px solid #5BA4E8;
+    background: #5BA4E8;
+    margin-top: 5px;
+}

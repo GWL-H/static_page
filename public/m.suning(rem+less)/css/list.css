@@ -1,0 +1,192 @@
+a {
+  text-decoration: none;
+}
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 21.33333333px;
+  }
+}
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 25px;
+  }
+}
+@media screen and (min-width: 384px) {
+  html {
+    font-size: 25.6px;
+  }
+}
+@media screen and (min-width: 400px) {
+  html {
+    font-size: 26.66666667px;
+  }
+}
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 27.6px;
+  }
+}
+@media screen and (min-width: 424px) {
+  html {
+    font-size: 28.26666667px;
+  }
+}
+@media screen and (min-width: 480px) {
+  html {
+    font-size: 32px;
+  }
+}
+@media screen and (min-width: 540px) {
+  html {
+    font-size: 36px;
+  }
+}
+@media screen and (min-width: 720px) {
+  html {
+    font-size: 48px;
+  }
+}
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 50px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  html {
+    font-size: 68.26666667px;
+  }
+}
+body {
+  min-width: 320px;
+  max-width: 1024px;
+  margin: 0 auto;
+  line-height: 1.5;
+  font-family: Arial, Helvetica;
+  background-color: #f7f7f7;
+}
+ul li {
+  list-style: none;
+}
+.nav {
+  width: 100%;
+  height: 1.76rem;
+  background-color: #fff;
+  line-height: 1.76rem;
+}
+.nav .nav-back {
+  float: left;
+  width: 1.8rem;
+  height: 100%;
+}
+.nav .nav-back a {
+  display: block;
+  width: 1.8rem;
+  height: 1.6rem;
+  background: url(../images/back.png) no-repeat;
+  background-size: 70% 70%;
+  background-position: center;
+}
+.nav .nav-title {
+  float: left;
+  width: auto;
+  font-size: 0.6rem;
+  color: #444;
+}
+.nav .nav-focus {
+  float: left;
+  width: 2.24rem;
+  height: 0.96rem;
+  margin: 0.4rem 0 0 0.2rem;
+}
+.nav .nav-focus a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.nav .nav-focus a img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.nav .nav-share {
+  float: right;
+  width: 1.76rem;
+  height: 1.76rem;
+}
+.nav .nav-share a {
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  margin: 0.38rem auto;
+}
+.nav .nav-share a img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.content {
+  width: 100%;
+}
+.content .banner {
+  width: 100%;
+}
+.content .banner ul {
+  margin: 0;
+  padding: 0;
+}
+.content .banner ul li {
+  width: 100%;
+  height: 9.44rem;
+}
+.content .banner ul li a img {
+  width: 100%;
+  height: 100%;
+}
+.content .select {
+  width: 100%;
+  height: 1.6rem;
+}
+.content .select a img {
+  width: 100%;
+  height: 100%;
+}
+.content .mobile {
+  width: 100%;
+  height: 5.36rem;
+}
+.content .mobile a img {
+  width: 100%;
+  height: 100%;
+}
+.footer {
+  display: flex;
+  position: fixed;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 1.98rem;
+  background: #fff;
+  border-top: 1px solid #ddd;
+}
+.footer a {
+  flex: 1;
+  height: 1.8rem;
+  padding-top: 0.2rem;
+}
+.footer a img {
+  display: block;
+  margin: 0 auto;
+  width: 0.96rem;
+  height: 0.96rem;
+}
+.footer a span {
+  display: block;
+  color: #989898;
+  font-size: 0.44rem;
+  text-align: center;
+}
