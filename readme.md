@@ -2,7 +2,7 @@
 
 ### 个人主页（响应式）：
 
-个人网页链接：https://gwl-h.github.io/static_page/
+  个人网页链接：https://gwl-h.github.io/static_page/
 其方法技术有HTML、CSS、JS、运用到的框架有jQuery、boostrap等、运用到插件有TouchSlide轮播图插件、EasyLazyload插件（取消使用）。其中主页项目内容中包含：品优购项目、个人简历项目、阿里百秀项目，以及京东、携程、苏宁等移动端小项目。
 
 |    项目     |     布局方式     |   方法技术    |        框架、插件         |
